@@ -28,6 +28,7 @@ params:
   defaultTheme: dark # dark, light
   disableThemeToggle: false
 
+  hideFooter: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
@@ -75,12 +76,12 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Shalom \U0001F44B"
+    # Content:
 
-  socialIcons:
-    - name: github
-      url: "https://github.com/Sheepheerd"
+  # socialIcons:
+  #   - name: github
+  #     url: "https://github.com/Sheepheerd"
 
   cover:
     hidden: true # hide everywhere but not in structured data
