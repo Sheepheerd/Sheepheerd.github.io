@@ -1,6 +1,6 @@
 baseURL: https://heerd.dev
 languageCode: en-us
-title: My New Hugo Site
+title: heerd.dev
 # paginate: 5
 theme: "PaperMod"
 
