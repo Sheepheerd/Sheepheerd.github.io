@@ -1,7 +1,7 @@
 baseURL: https://heerd.dev
 languageCode: en-us
 title: My New Hugo Site
-theme: "PaperMod"
+theme: "hugo-PaperMod"
 
 caches:
   images:
