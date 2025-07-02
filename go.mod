@@ -1,4 +1,4 @@
-module heerd
+module Sheepheerd.github.io
 
 go 1.24.4
 
