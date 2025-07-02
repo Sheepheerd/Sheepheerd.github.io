@@ -6,7 +6,3 @@ theme: "PaperMod"
 caches:
   images:
     dir: :cacheDir/images
-
-module:
-  imports:
-  - path: github.com/adityatelange/hugo-PaperMod
