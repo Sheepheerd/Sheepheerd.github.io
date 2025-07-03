@@ -1,13 +1,12 @@
+---
+title: heerd.dev
 baseURL: https://heerd.dev
 languageCode: en-us
-title: heerd.dev
-# paginate: 5
-theme: "PaperMod"
+theme: [hugo-PaperModX]
 
 caches:
   images:
     dir: :cacheDir/images
-
 enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
@@ -18,80 +17,38 @@ minify:
   minifyOutput: true
 
 params:
-  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: heerd.dev
-  description: "The Farm"
+  disableAnchoredHeadings: true
+  description: The Farm
   keywords: [Blog, Portfolio]
-  author: Shepard Garrett
+  # author: Shepard Garrett
   # images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: dark # dark, light
-  disableThemeToggle: false
-
+  DateFormat: January 2, 2006
+  defaultTheme: dark  # dark, light
+  disableThemeToggle: true
   hideFooter: true
-  ShowReadingTime: true
+
+  EnableInstantClick: true
+  TocSide: 'right'
+  # ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
+  # ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
-
-  assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    # favicon: "<link / abs url>"
-    # favicon16x16: "<link / abs url>"
-    # favicon32x32: "<link / abs url>"
-    # apple_touch_icon: "<link / abs url>"
-    # safari_pinned_tab: "<link / abs url>"
-
-  label:
-    # text: "Home"
-    # icon: /apple-touch-icon.png
-    # iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: true # needs to be explicitly set
-    title: heerd.dev
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
-
-  # home-info mode
-  homeInfoParams:
-    Title: "Shalom \U0001F44B"
-    # Content:
-
-  # socialIcons:
-  #   - name: github
-  #     url: "https://github.com/Sheepheerd"
-
+  showtoc: true
+  tocopen: true
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
-
-  # editPost:
-  #   URL: "https://github.com/<path_to_repo>/content"
-  #   Text: "Suggest Changes" # edit text
-  #   appendFilePath: true # to append file path to Edit link
+    hidden: false  # hide everywhere but not in structured data
+    hiddenInList: true  # hide on list pages and home
+    hiddenInSingle: false  # hide on single page
 
   # for search
   # https://fusejs.io/api/options.html
@@ -102,29 +59,32 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
-# menu:
-#   main:
-#     - identifier: categories
-#       name: categories
-#       url: /categories/
-#       weight: 10
-#     - identifier: tags
-#       name: tags
-#       url: /tags/
-#       weight: 20
-#     - identifier: my-github
-#       name: github.com
-#       url: https://github.com/Sheepheerd
-#       weight: 30
+    limit: 10  # refer: https://www.fusejs.io/api/methods.html#search
+    keys: [title, permalink, summary, content]
+
+  assets:
+    disableHLJS: true
+
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: my-github
+      name: github
+      url: https://github.com/Sheepheerd
+      params:
+        external: true
+      weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
+# pygmentsUseClasses: true
 markup:
   highlight:
+    style: dracula
+    lineNos: false
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai

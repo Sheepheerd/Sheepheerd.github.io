@@ -1,0 +1,102 @@
+/* Dark theme variables with transition for smooth changes */
+.dark {
+  --post-width: 720px;
+  --theme: rgb(29, 30, 32);
+  --entry: rgb(46, 46, 51);
+  --primary: rgb(218, 218, 219);
+  --primary-dim: rgb(186, 186, 186);
+  --secondary: rgb(155, 156, 157);
+  --tertiary: rgb(123, 124, 124);
+  --tertiary-bg: rgb(65, 66, 68);
+  --content: rgb(196, 196, 197);
+  --code-bg: rgb(55, 56, 62);
+  --border: rgb(51, 51, 51);
+  --link-background-color: #000000;
+  --link-color: var(--primary);
+  --link-hover-color: #94b0db;
+  --link-underline-shadow: 0 1px 0 var(--link-color);
+  --link-hover-underline-color: var(--link-hover-color);
+  --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+  --footer-height: 0px;
+  /* for type pages theming */
+  --signature: var(--primary);
+  --signature-bg: var(--secondary);
+
+  /* Smooth transition on all color-related variables */
+  transition:
+    --theme 0.4s ease,
+    --entry 0.4s ease,
+    --primary 0.4s ease,
+    --primary-dim 0.4s ease,
+    --secondary 0.4s ease,
+    --tertiary 0.4s ease,
+    --tertiary-bg 0.4s ease,
+    --content 0.4s ease,
+    --code-bg 0.4s ease,
+    --border 0.4s ease,
+    --link-color 0.4s ease,
+    --link-hover-color 0.4s ease,
+    --link-underline-shadow 0.4s ease,
+    --link-hover-underline-shadow 0.4s ease,
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeInEffect 0.5s ease forwards;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Card inside dark theme with smooth transform transition */
+.dark .card {
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+/* Background and color for body when dark and list-page */
+body.dark.list-page,
+body.dark {
+  background: radial-gradient(circle at center, #1a1a1a, #121212 80%);
+  color: #e0e0e0;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+/* Fade-in all children under these combined classes with stagger */
+body.list-page.dark.type-page.kind-home[class*="layout-"] .main {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.3s; /* you can stagger if desired */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Initially hide .post-single inside that container */
+body.dark.type-posts.kind-page[class*="layout-"] .post-single {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s; /* optional delay */
+}
