@@ -1,4 +1,5 @@
-/* /* Background */ */
+/* /* Background */
+*/
 /* .chroma { */
 /*   color: #e0e0e0; /* soft off-white for text */ */
 /*   background-color: #121212; /* very dark background */ */
@@ -155,4 +156,10 @@
 /* .chroma .gs, */
 /* .chroma .gt { */
 /*   color: #e0e0e0; /* default text color */ */
+/* } */
+
+/* /* LineHighlight */ .chroma .hl { */
+/*   display: block; */
+/*   width: 100%; */
+/*   background-color: #ffe6cc; */
 /* } */

@@ -1,4 +1,3 @@
-/* Dark theme variables with transition for smooth changes */
 .dark {
   --post-width: 720px;
   --theme: rgb(29, 30, 32);
@@ -11,7 +10,7 @@
   --content: rgb(196, 196, 197);
   --code-bg: rgb(55, 56, 62);
   --border: rgb(51, 51, 51);
-  --link-background-color: #000000;
+  --link-background-color: #1111;
   --link-color: var(--primary);
   --link-hover-color: #94b0db;
   --link-underline-shadow: 0 1px 0 var(--link-color);
@@ -71,18 +70,22 @@ html {
 /* Background and color for body when dark and list-page */
 body.dark.list-page,
 body.dark {
-  background: radial-gradient(circle at center, #1a1a1a, #121212 80%);
-  color: #e0e0e0;
+  background: radial-gradient(
+    circle at center,
+    #0d0d0d 0%,
+    #050505 80%,
+    #000000 100%
+  );
+  color: #f0f0f0;
   transition:
-    background-color 0.5s ease,
-    color 0.5s ease;
+    background 0.4s ease-out,
+    color 0.4s ease-out;
 }
-
 /* Fade-in all children under these combined classes with stagger */
 body.list-page.dark.type-page.kind-home[class*="layout-"] .main {
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
-  animation-delay: 0.3s; /* you can stagger if desired */
+  animation-delay: 0.3s;
 }
 
 @keyframes fadeIn {
@@ -99,4 +102,18 @@ body.dark.type-posts.kind-page[class*="layout-"] .post-single {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
   animation-delay: 0.3s; /* optional delay */
+}
+
+body.list-page.dark.type-tags.kind-taxonomy[class*="layout"] .main {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s; /* you can stagger if desired */
+}
+
+.post-entry {
+  background-color: rgba(18, 18, 18, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 1rem;
 }
