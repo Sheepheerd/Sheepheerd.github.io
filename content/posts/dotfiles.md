@@ -56,7 +56,7 @@ now that we have a way to configure and recreate our dotfiles on any system, let
 - **`shell = zsh`**: i've tried [fish](https://fishshell.com/), it just doesn't have what i want. with nix, i can install [omzsh](https://ohmyz.sh/) and get what i want out of the box like fish...and [POSIX](https://en.wikipedia.org/wiki/POSIX) complaint.
 - **`terminal = ghostty`**: at this point, it doesn't seem to matter what terminal you use. alacritty is fast, kitty is fast, ghostty is fast. shaders are cool, but my wallpaper is black so it doesn't do me much good.
 - **`editor = neovim`**: [this says all](/posts/neovim)
-- **`wm = hyprland`**: it doesn't matter as long as i have a window manager. floating windows is a joke i die laughing. if you have not used a wm, please try out [i3](https://i3-corps.com/). it is a tried and true x11 windows manager, and if you are on wayland tryout [sway](https://swaywm.org/).
+- **`wm = hyprland`**: it doesn't matter as long as i have a window manager. floating windows is a joke i die laughing at. if you have not used a wm, please try out [i3](https://i3-corps.com/). it is a tried and true x11 windows manager, and if you are on wayland tryout [sway](https://swaywm.org/).
 - **`browser = arkenfox`**: stop using chrome, stop using default firefox, you are dumb. it takes three seconds to switch/modify your browser so that you are not being stalked. arkenfox is a hardened version of firefox designed with privacy in mind. its a step closer to [ladybird](https://ladybird.org/)
 
 ## Oxidants
