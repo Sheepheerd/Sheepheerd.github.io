@@ -14,7 +14,7 @@
   --code-bg: rgb(55, 56, 62);
   --border: rgb(51, 51, 51);
   --link-background-color: #1111;
-  --link-color: var(--primary);
+  /* --link-color: var(--primary); */
   --box-shadow: var(--link-underline-shadow);
   --link-hover-color: #94b0db;
   --link-color: #8ab4f8;
@@ -121,4 +121,47 @@ body.list-page.dark.type-tags.kind-taxonomy[class*="layout"] .main {
   -webkit-backdrop-filter: blur(8px);
   border-radius: 8px;
   padding: 1rem;
+}
+
+.first-entry .entry-content {
+  font-size: 20px;
+}
+
+.first-entry {
+  position: relative;
+  min-height: 200px;
+  margin: var(--gap) 0 calc(var(--gap) * 1);
+}
+
+.first-entry .entry-header {
+  margin: 40px auto 32px;
+}
+
+.first-entry .entry-header h1 {
+  font-size: 40px;
+}
+
+.post-content {
+  font-size: 20px;
+  color: var(--content);
+}
+
+.first-entry hr {
+  margin: 30px 0;
+  height: 2px;
+  background: var(--tertiary-bg);
+  border-top: 0;
+  border-bottom: 0;
+}
+.first-entry .entry-content li {
+  margin-top: 0.5em;
+}
+
+.first-entry .entry-content ul,
+.first-entry .entry-content ol {
+  margin: 0.8em 0;
+  margin-right: 0px;
+  margin-bottom: 0.4em;
+  margin-left: 0px;
+  padding-inline-start: 20px;
 }

@@ -72,7 +72,3 @@ i mainly use the terminal. i have a list of rust programs that i've switched to 
 ## Conclusion
 
 my dotfiles are listed on my [github](https://github.cim/Sheepheerd) page. i have spent a lot of time trying to configure what i want. it is not the cleanest, and that is ok. it gets the job done and it gets it done anywhere
-
-```
-
-```

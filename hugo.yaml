@@ -32,7 +32,7 @@ params:
   TocSide: 'right'
   # ShowReadingTime: true
   ShowShareButtons: true
-  ShowPostNavLinks: true
+  ShowPostNavLinks: false
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: false
   # ShowWordCount: true
@@ -65,6 +65,17 @@ params:
   assets:
     disableHLJS: true
 
+  homeInfoParams:
+    Title: "Shepard Garrett"
+    Content: |
+
+      **Computer Scientist & Engineer**
+
+      ---
+
+      - i vim
+      - i chess
+      - i goof
 menu:
   main:
     - identifier: posts
