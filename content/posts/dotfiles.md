@@ -34,9 +34,9 @@ your dotfiles should be easily accessible. i store mine in a git repo hosted on 
 
 ### Nix
 
-This **configuration** leverages the use of the [nix](https://nixos.org/) package manager
+This **configuration** leverages the use of the [nix](https://nixos.org/) package manager.
 
-nix is a purely functional package manager that treats your system configuration like code. you define how your system should be, and it will be. most importantly, this will **centralize** our configuration so that no matter where we are, we will have a spot-for-spot system.
+nix is a purely functional package manager that treats your system configuration like code. you define how your system will be through code and will be this exact way. most importantly, this will **centralize** our configuration so that no matter where we are, we will have a spot-for-spot system.
 
 ```nix
   programs.ghostty = {
@@ -49,15 +49,15 @@ above is a snippet of nix code that will install **ghostty** for your local user
 
 ## Tools of the Trade
 
-now that we have a way to configure and recreate our dotfiles on any system, lets talk about mine
+now that we have a way to configure and recreate our dotfiles on any system, lets talk about mine.
 
 ### Essential
 
 - **`shell = zsh`**: i've tried [fish](https://fishshell.com/), it just doesn't have what i want. with nix, i can install [omzsh](https://ohmyz.sh/) and get what i want out of the box like fish...and [POSIX](https://en.wikipedia.org/wiki/POSIX) complaint.
 - **`terminal = ghostty`**: at this point, it doesn't seem to matter what terminal you use. alacritty is fast, kitty is fast, ghostty is fast. shaders are cool, but my wallpaper is black so it doesn't do me much good.
 - **`editor = neovim`**: [this says all](/posts/neovim)
-- **`wm = hyprland`**: it doesn't matter as long as i have a window manager. floating windows is a joke i die laughing. if you have not used a wm, please try out [i3](https://i3-corps.com/). it is a tried and true x11 windows manager, and if you are on wayland tryout [sway](https://swaywm.org/).
-- **`browser = arkenfox`**: stop using chrome, stop using default firefox, you are dumb. it takes three seconds to switch/modify your browser so that you are not being stalked. arkenfox is a hardened version of firefox designed with privacy in mind. its a step closer to [ladybird](https://ladybird.org/)
+- **`wm = hyprland`**: it doesn't matter as long as i have a window manager. floating windows is a joke i die laughing at. if you have not used a wm, please try out [i3](https://i3-corps.com/). it is a tried and true x11 windows manager, and if you are on wayland tryout [sway](https://swaywm.org/).
+- **`browser = arkenfox`**: stop using chrome, stop using default firefox, you are dumb. it takes three seconds to switch/modify your browser so that you are not being stalked. arkenfox is a hardened version of firefox designed with privacy in mind. its a step closer to [ladybird](https://ladybird.org/).
 
 ## Oxidants
 
@@ -69,6 +69,4 @@ i mainly use the terminal. i have a list of rust programs that i've switched to 
 
 ---
 
-## Conclusion
-
-my dotfiles are listed on my [github](https://github.cim/Sheepheerd) page. i have spent a lot of time trying to configure what i want. it is not the cleanest, and that is ok. it gets the job done and it gets it done anywhere
+my dotfiles are listed on my [github](https://github.cim/Sheepheerd) page. i have spent a lot of time trying to configure what i want. it is not the cleanest, and that is ok. it gets the job done and it gets it done anywhere.
