@@ -1,0 +1,91 @@
+.dark .chroma {
+  color: #f8f8f2;
+  background-color: #1e1f2b;
+}
+
+.dark .chroma .hl {
+  display: block;
+  width: 100%;
+  background-color: #44475a;
+}
+
+.dark .chroma .k,
+.dark .chroma .kr,
+.dark .chroma .kn,
+.dark .chroma .kp,
+.dark .chroma .kr,
+.dark .chroma .kt {
+  color: #ff79c6;
+}
+
+.dark .chroma .kc {
+  color: #ff79c6;
+}
+
+.dark .chroma .nf,
+.dark .chroma .nf {
+  color: #50fa7b;
+}
+
+.dark .chroma .s,
+.dark .chroma .sa,
+.dark .chroma .sb,
+.dark .chroma .sc,
+.dark .chroma .sd,
+.dark .chroma .s2,
+.dark .chroma .se,
+.dark .chroma .sh,
+.dark .chroma .si,
+.dark .chroma .sx,
+.dark .chroma .sr,
+.dark .chroma .s1,
+.dark .chroma .ss {
+  color: #f1fa8c;
+}
+
+.dark .chroma .m,
+.dark .chroma .mb,
+.dark .chroma .mf,
+.dark .chroma .mh,
+.dark .chroma .mi,
+.dark .chroma .il,
+.dark .chroma .mo {
+  color: #bd93f9;
+}
+
+.dark .chroma .o,
+.dark .chroma .ow {
+  color: #ff79c6;
+}
+
+.dark .chroma .c,
+.dark .chroma .ch,
+.dark .chroma .cm,
+.dark .chroma .c1,
+.dark .chroma .cs {
+  color: #6272a4;
+}
+
+.dark .chroma .err {
+  color: #ff5555;
+}
+
+.dark .chroma .gd {
+  color: #ff5555;
+}
+
+.dark .chroma .gi {
+  color: #50fa7b;
+}
+
+.dark .chroma .go {
+  color: #44475a;
+}
+
+.dark .chroma .w {
+  color: #f8f8f2;
+}
+
+.comments-separator {
+  display: none;
+}

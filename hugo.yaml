@@ -85,6 +85,6 @@ menu:
 # pygmentsUseClasses: true
 markup:
   highlight:
-    style: dracula
+    # style: dracula
     # lineNos: false
     noClasses: false
