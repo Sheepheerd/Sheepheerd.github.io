@@ -9,7 +9,7 @@ draft: false
 hidemeta: true
 comments: false
 description: "nix home-manager"
-disableHLJS: false # to disable highlightjs
+disableHLJS: false
 disableShare: true
 hideSummary: false
 searchHidden: true
@@ -21,68 +21,57 @@ ShowRssButtonInSectionTermList: false
 UseHugoToc: false
 ---
 
-Here's a detailed breakdown of information from your `seemethere/dotfiles` GitHub repository, which you can use to enrich your dotfiles documentation:
+the average user tends to set and forget their configurations. despite the endless number of dotfile managers ranging from bash scripts to symlinkers, you can leave it to _timmy_ to not even use one. if we are going to pour copious amounts of time into ricing, we can at least make it declarative along the way.
 
 ---
 
-## Dotfiles Overview
+## Centralized
 
-Your dotfiles repository, `seemethere/dotfiles`, serves as a centralized collection of your personal configuration files, designed to streamline your development environment setup.
+your dotfiles should be easily accessible. i store mine in a git repo hosted on github.com. if need be, use a flash drive and carry it.
 
-### Core Technologies and Languages
+> "a man without his dots is as good as dead"
+> -- nietzsche
 
-The configurations primarily leverage the following languages and tools:
+### Nix
 
-- **Shell (45.8%):** Extensive use of shell scripting for various utilities and setup automation.
-- **Lua (34.7%):** Heavily utilized, particularly for Neovim configurations, allowing for a modern and performant editor setup.
-- **Vim Script (19.5%):** Still present, likely for older Vim configurations or specific plugins.
+This **configuration** leverages the use of the [nix](https://nixos.org/) package manager
 
-### Key Tools and Dependencies
+nix is a purely functional package manager that treats your system configuration like code. you define how your system should be, and it will be. most importantly, this will **centralize** our configuration so that no matter where we are, we will have a spot-for-spot system.
 
-Your dotfiles are configured for and depend on several essential command-line tools and applications:
-
-```go {linenos=inline hl_lines=[3,"6-8"] style=vim}
-package main
-
-import "fmt"
-
-func main() {
-    for i := 0; i < 3; i++ {
-        fmt.Println("Value of i:", i)
-    }
-}
+```nix
+  programs.ghostty = {
+    enable = true;
+  };
 
 ```
 
-- **Shells:**
-  - `zsh`
-  - `bash`
-- **Editor:**
-  - `neovim` (including `LazyVim` user configuration, indicating a modern Neovim setup)
-  - `vim 8.0+`
-- **Terminal Multiplexer:**
-  - `tmux`
-- **Configuration Management:**
-  - `Dotbot`: This tool is used for managing and symlinking your dotfiles, ensuring a consistent setup across your machines.
+above is a snippet of nix code that will install **ghostty** for your local user. you are also capable of configuring ghostty through nix as well. this is done through the use of [attribute sets](https://nix.dev/manual/nix/2.24/language/syntax#attrs-literal), but that is for a later date.
 
-### Noteworthy Configurations and Directories
+## Tools of the Trade
 
-The repository is structured to manage various aspects of your system and application configurations:
+now that we have a way to configure and recreate our dotfiles on any system, lets talk about mine
 
-- **`bin/`**: Contains custom scripts or executables, like the recent update for `tmux`.
-- **`bash/`**: Houses configurations specific to your Bash shell.
-- **`ghostty/`**: Includes configurations for the `ghostty` terminal emulator.
-- **`git/`**: Manages your global Git configurations, such as settings for `venv` ignores.
-- **`kitty/`**: Contains configurations for the `kitty` terminal emulator, which also seems to be part of your installation routine.
-- **`lazyvim/`**: Dedicated to your `LazyVim` user configurations, indicating a modern, plugin-managed Neovim setup.
-- **`nvim/`**: Contains your general Neovim configurations, including lock file updates for its plugins.
-- **`ssh/`**: Includes configurations related to SSH, with a focus on agent forwarding.
+### Essential
+
+- **`shell = zsh`**: i've tried [fish](https://fishshell.com/), it just doesn't have what i want. with nix, i can install [omzsh](https://ohmyz.sh/) and get what i want out of the box like fish...and [POSIX](https://en.wikipedia.org/wiki/POSIX) complaint.
+- **`terminal = ghostty`**: at this point, it doesn't seem to matter what terminal you use. alacritty is fast, kitty is fast, ghostty is fast. shaders are cool, but my wallpaper is black so it doesn't do me much good.
+- **`editor = neovim`**: [this says all](/posts/neovim)
+- **`wm = hyprland`**: it doesn't matter as long as i have a window manager. floating windows is a joke i die laughing. if you have not used a wm, please try out [i3](https://i3-corps.com/). it is a tried and true x11 windows manager, and if you are on wayland tryout [sway](https://swaywm.org/).
+- **`browser = arkenfox`**: stop using chrome, stop using default firefox, you are dumb. it takes three seconds to switch/modify your browser so that you are not being stalked. arkenfox is a hardened version of firefox designed with privacy in mind. its a step closer to [ladybird](https://ladybird.org/)
+
+## Oxidants
+
+i mainly use the terminal. i have a list of rust programs that i've switched to and never going back from. to name a couple i regularly use:
+
+- **`zoxide`**: my personal favorite. i use it everyday. it will cd you into a dir given just part of the dir name. it's my main navigation tool.
+- **`ouch`**: this is an archiving program. quick and easy to use.
+- **`eza`**: an ls replacer. it will also provide color to option listings, i.e. `eza -la`.
 
 ---
 
-This information provides a solid foundation for your "Dotfiles" documentation. You can elaborate on each section, perhaps adding specific examples of configurations or detailing your personal workflow enhancements.
+## Conclusion
 
-Let me know if you need further details or have more questions!
+my dotfiles are listed on my [github](https://github.cim/Sheepheerd) page. i have spent a lot of time trying to configure what i want. it is not the cleanest, and that is ok. it gets the job done and it gets it done anywhere
 
 ```
 

@@ -1,6 +1,6 @@
-/* Example: Change default body and headings font */
 body {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
+  /* font-weight: 600; */
 }
 
 h1,
@@ -10,9 +10,14 @@ h4,
 h5,
 h6 {
   font-family: "JetBrains Mono", monospace;
+  /* font-weight: 400; */
 }
 
 code,
 pre {
   font-family: "JetBrains Mono", monospace;
+  /* font-weight: 400; */
+}
+.post-content {
+  font-size: 20px;
 }

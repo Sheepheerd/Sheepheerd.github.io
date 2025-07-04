@@ -1,5 +1,8 @@
+.post-content {
+  box-shadow: var(--link-underline-shadow);
+}
 .dark {
-  --post-width: 720px;
+  --post-width: 800px;
   --theme: rgb(29, 30, 32);
   --entry: rgb(46, 46, 51);
   --primary: rgb(218, 218, 219);
@@ -12,7 +15,9 @@
   --border: rgb(51, 51, 51);
   --link-background-color: #1111;
   --link-color: var(--primary);
+  --box-shadow: var(--link-underline-shadow);
   --link-hover-color: #94b0db;
+  --link-color: #8ab4f8;
   --link-underline-shadow: 0 1px 0 var(--link-color);
   --link-hover-underline-color: var(--link-hover-color);
   --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);

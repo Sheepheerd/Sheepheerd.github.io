@@ -84,7 +84,10 @@ menu:
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 markup:
+  renderer:
+    unsafe: true
   highlight:
     # style: dracula
-    # lineNos: false
+    lineNos: true
+    lineNumbersInTable: false
     noClasses: false
