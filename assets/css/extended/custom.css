@@ -1,6 +1,3 @@
-.post-content {
-  box-shadow: var(--link-underline-shadow);
-}
 .dark {
   --post-width: 800px;
   --theme: rgb(29, 30, 32);

@@ -14,7 +14,7 @@ buildExpired: false
 
 minify:
   disableXML: true
-  minifyOutput: true
+  # minifyOutput: true
 
 params:
   title: heerd.dev
@@ -32,23 +32,36 @@ params:
   TocSide: 'right'
   # ShowReadingTime: true
   ShowShareButtons: true
-  ShowPostNavLinks: false
+  ShowPostNavLinks: true
   ShowBreadCrumbs: false
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   # ShowWordCount: true
   ShowRssButtonInSectionTermList: false
   UseHugoToc: false
   disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
+  disableScrollToTop: true
   hidemeta: false
   hideSummary: false
-  showtoc: true
-  tocopen: true
-  cover:
-    hidden: false  # hide everywhere but not in structured data
-    hiddenInList: true  # hide on list pages and home
-    hiddenInSingle: false  # hide on single page
+  ShowToc: true
+  TocOpen: true
+  # commentSystems:
+  #   disqus:
+  #     shortname: reorx
+  #   remark42:
+  #     url: https://remark42.reorx.com
+  #     site: reorx.github.io
+  #   telegramWidget:
+  #     channel: reorx_share
+  #     accentColor: "9077e1"
+  #     limit: 20
+  # defaultCommentSystems:
+  #   remark42: true
+
+
+  # cover:
+  #   hidden: false  # hide everywhere but not in structured data
+  #   hiddenInList: true  # hide on list pages and home
+  #   hiddenInSingle: false  # hide on single page
 
   # for search
   # https://fusejs.io/api/options.html
