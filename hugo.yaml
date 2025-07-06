@@ -1,5 +1,6 @@
 ---
 title: heerd.dev
+description: The farm
 baseURL: https://heerd.dev
 languageCode: en-us
 theme: [hugo-PaperModX]
