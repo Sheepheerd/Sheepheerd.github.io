@@ -1,12 +1,13 @@
 ---
 title: "Dotfiles"
+date: "2025-07-03"
 # weight: 1
 # aliases: ["/first"]
 tags: ["vim"]
 showToc: true
 TocOpen: false
 draft: false
-hidemeta: true
+hidemeta: false
 comments: false
 description: "nix home-manager"
 disableHLJS: false
