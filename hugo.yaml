@@ -12,16 +12,23 @@ enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableInlineShortcodes: true
 
 minify:
   disableXML: true
   # minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   title: heerd.dev
   disableAnchoredHeadings: true
   description: The Farm
-  keywords: [Blog, Portfolio]
+  # keywords: [Blog, Portfolio]
   # author: Shepard Garrett
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -29,7 +36,7 @@ params:
   disableThemeToggle: true
   hideFooter: true
 
-  EnableInstantClick: true
+  # EnableInstantClick: true
   TocSide: 'right'
   # ShowReadingTime: true
   ShowShareButtons: true
@@ -88,15 +95,17 @@ params:
       ---
 menu:
   main:
-    - identifier: my-github
-      name: github
+    - name: Search
+      url: /search/
+      weight: 10
+
+    - name: github
       url: https://github.com/Sheepheerd
       params:
         external: true
       weight: 30
-    - name: Search
-      url: /search/
-      weight: 10
+
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 markup:
