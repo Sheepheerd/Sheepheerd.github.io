@@ -12,9 +12,9 @@ comments: false
 description: "Desc Text."
 disableHLJS: true # to disable highlightjs
 disableShare: true
-disableHLJS: false
+disableHLJS: true
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: true

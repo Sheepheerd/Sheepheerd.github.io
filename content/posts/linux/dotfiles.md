@@ -10,7 +10,7 @@ draft: false
 hidemeta: false
 comments: false
 description: "nix home-manager"
-disableHLJS: false
+disableHLJS: true
 disableShare: true
 hideSummary: false
 searchHidden: false
