@@ -19,11 +19,9 @@
   --link-hover-underline-color: var(--link-hover-color);
   --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
   --footer-height: 0px;
-  /* for type pages theming */
   --signature: var(--primary);
   --signature-bg: var(--secondary);
 
-  /* Smooth transition on all color-related variables */
   transition:
     --theme 0.4s ease,
     --entry 0.4s ease,
@@ -43,7 +41,6 @@
     color 0.4s ease;
 }
 
-/* Fade-in animation */
 .fade-in {
   opacity: 0;
   animation: fadeInEffect 0.5s ease forwards;
@@ -58,32 +55,23 @@
   }
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Card inside dark theme with smooth transform transition */
 .dark .card {
   transition: transform 0.3s ease;
   will-change: transform;
 }
 
-/* Background and color for body when dark and list-page */
 body.dark.list-page,
 body.dark {
-  background: radial-gradient(
-    circle at center,
-    #0d0d0d 0%,
-    #050505 80%,
-    #000000 100%
-  );
+  background-color: #000000;
   color: #f0f0f0;
   transition:
-    background 0.4s ease-out,
+    background-color 0.4s ease-out,
     color 0.4s ease-out;
 }
-/* Fade-in all children under these combined classes with stagger */
 body.list-page.dark.type-page.kind-home[class*="layout-"] .main {
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
@@ -99,17 +87,16 @@ body.list-page.dark.type-page.kind-home[class*="layout-"] .main {
   }
 }
 
-/* Initially hide .post-single inside that container */
 body.dark.type-posts.kind-page[class*="layout-"] .post-single {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
-  animation-delay: 0.3s; /* optional delay */
+  animation-delay: 0.3s;
 }
 
 body.list-page.dark.type-tags.kind-taxonomy[class*="layout"] .main {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
-  animation-delay: 0.3s; /* you can stagger if desired */
+  animation-delay: 0.3s;
 }
 
 .post-entry {

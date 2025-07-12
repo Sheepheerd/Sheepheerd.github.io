@@ -13,7 +13,7 @@ description: "nix home-manager"
 disableHLJS: false
 disableShare: true
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: true
