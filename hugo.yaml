@@ -16,7 +16,6 @@ enableInlineShortcodes: true
 
 minify:
   disableXML: true
-  # minifyOutput: true
 
 outputs:
   home:
@@ -36,14 +35,12 @@ params:
   disableThemeToggle: true
   hideFooter: true
 
-  # EnableInstantClick: true
+  EnableInstantClick: true
   TocSide: 'right'
-  # ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
-  # ShowWordCount: true
   ShowRssButtonInSectionTermList: false
   UseHugoToc: false
   disableSpecial1stPost: false
@@ -52,18 +49,6 @@ params:
   hideSummary: false
   ShowToc: true
   TocOpen: true
-  # commentSystems:
-  #   disqus:
-  #     shortname: reorx
-  #   remark42:
-  #     url: https://remark42.reorx.com
-  #     site: reorx.github.io
-  #   telegramWidget:
-  #     channel: reorx_share
-  #     accentColor: "9077e1"
-  #     limit: 20
-  # defaultCommentSystems:
-  #   remark42: true
 
 
   cover:
@@ -71,8 +56,6 @@ params:
     hiddenInList: true  # hide on list pages and home
     hiddenInSingle: false  # hide on single page
 
-  # for search
-  # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -106,13 +89,10 @@ menu:
       weight: 30
 
 
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
 markup:
   renderer:
     unsafe: true
   highlight:
-    # style: dracula
     lineNos: true
     lineNumbersInTable: false
     noClasses: false
