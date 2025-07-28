@@ -1,13 +1,13 @@
 ---
-title: "Neovim"
-date: "2025-07-15"
+title: "NixOS"
+date: "2025-07-28"
 tags: ["vim"]
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "personalized development environment"
+description: "Creating a determanistic environment"
 disableHLJS: true
 disableShare: true
 hideSummary: false
