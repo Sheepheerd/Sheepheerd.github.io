@@ -4,7 +4,7 @@ date: "2025-07-15"
 tags: ["vim"]
 showToc: true
 TocOpen: false
-draft: false
+draft: true
 hidemeta: false
 comments: false
 description: "personalized development environment"
