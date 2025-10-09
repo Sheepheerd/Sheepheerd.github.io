@@ -1,6 +1,6 @@
 ---
 title: "Building GHDL on Arm"
-date: "2025-07-15"
+date: "2025-09-10"
 tags: ["m1", "asahi", "ghdl", "nix"]
 showToc: true
 TocOpen: false
