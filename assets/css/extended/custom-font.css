@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 body {
   font-family: "JetBrains Mono", monospace;
   /* font-weight: 600; */
@@ -18,6 +20,10 @@ pre {
   font-family: "JetBrains Mono", monospace;
   /* font-weight: 400; */
 }
+
 .post-content {
-  font-size: 20px;
+  font-family: "Georgia";
+  font-size: 25px;
+  /* Optional: Add line-height for better readability in serif */
+  line-height: 2;
 }
