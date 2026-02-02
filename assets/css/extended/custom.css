@@ -41,19 +41,6 @@
     color 0.4s ease;
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeInEffect 0.5s ease forwards;
-}
-
-@keyframes fadeInEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 html {
   scroll-behavior: smooth;
@@ -73,30 +60,16 @@ body.dark {
     color 0.4s ease-out;
 }
 body.list-page.dark.type-page.kind-home[class*="layout-"] .main {
-  opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
-  animation-delay: 0.3s;
+  opacity: 1;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 body.dark.type-posts.kind-page[class*="layout-"] .post-single {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 0.3s;
+  opacity: 1;
 }
 
 body.list-page.dark.type-tags.kind-taxonomy[class*="layout"] .main {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 0.3s;
+  opacity: 1;
 }
 
 .post-entry {
